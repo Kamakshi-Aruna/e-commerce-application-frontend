@@ -24,7 +24,7 @@ const CartPage = () => {
 
   const checkout = () => {
     const oldCart = [...cart];
-    setCart([]);
+    // setCart([]);
     checkoutAPI()
       .then(() => {
         toast.success("Order placed successfully!");
